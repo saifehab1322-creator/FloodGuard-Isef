@@ -1,0 +1,31 @@
+USE floodguard_isef;
+-- Governorate capitals (coordinates only; no weather or risk data is seeded).
+INSERT IGNORE INTO locations (name_en,name_ar,latitude,longitude,is_governorate) VALUES
+('Cairo','القاهرة',30.0444,31.2357,1),
+('Giza','الجيزة',30.0131,31.2089,1),
+('Alexandria','الإسكندرية',31.2001,29.9187,1),
+('Qalyubia (Banha)','القليوبية',30.466,31.1848,1),
+('Port Said','بورسعيد',31.2653,32.3019,1),
+('Suez','السويس',29.9668,32.5498,1),
+('Damietta','دمياط',31.4165,31.8133,1),
+('Dakahlia (Mansoura)','الدقهلية',31.0409,31.3785,1),
+('Sharqia (Zagazig)','الشرقية',30.5877,31.502,1),
+('Gharbia (Tanta)','الغربية',30.7865,31.0004,1),
+('Monufia (Shibin El Kom)','المنوفية',30.5972,30.9876,1),
+('Kafr El Sheikh','كفر الشيخ',31.1107,30.9388,1),
+('Beheira (Damanhur)','البحيرة',31.0341,30.4682,1),
+('Ismailia','الإسماعيلية',30.5965,32.2715,1),
+('Faiyum','الفيوم',29.3084,30.8428,1),
+('Beni Suef','بني سويف',29.0661,31.0994,1),
+('Minya','المنيا',28.1099,30.7503,1),
+('Asyut','أسيوط',27.1809,31.1837,1),
+('Sohag','سوهاج',26.5591,31.6948,1),
+('Qena','قنا',26.1551,32.716,1),
+('Luxor','الأقصر',25.6872,32.6396,1),
+('Aswan','أسوان',24.0889,32.8998,1),
+('Red Sea (Hurghada)','البحر الأحمر',27.2579,33.8116,1),
+('New Valley (Kharga)','الوادي الجديد',25.439,30.5586,1),
+('Matrouh (Marsa Matrouh)','مطروح',31.3543,27.2373,1),
+('North Sinai (Arish)','شمال سيناء',31.1316,33.7984,1),
+('South Sinai (El Tor)','جنوب سيناء',28.241,33.6221,1);
+INSERT IGNORE INTO settings (skey,svalue) VALUES ('moderate','33'),('high','66');

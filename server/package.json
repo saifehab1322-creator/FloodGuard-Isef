@@ -1,0 +1,12 @@
+{
+  "name": "floodguard-server",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "db:init": "node src/initDb.js"
+  },
+  "dependencies": { "cors": "^2.8.5", "dotenv": "^16.4.5", "express": "^4.19.2", "mysql2": "^3.11.0" }
+}
